@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'MostarDesign';
+    src:  url('./assets/fonts/Mostardesign-SofiaProRegular.otf');
+}
+
+@import './variable.scss';
+
+
+
+body{
+    font-family: 'MostarDesign';
+    margin:0;
+    background-color: $silver;
+}

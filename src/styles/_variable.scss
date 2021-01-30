@@ -1,0 +1,36 @@
+$marine-blue: #023071;
+$faded-red:#E63846;
+$aqua-green: #12C990;
+$slate-blue: #586F8F;
+$white: #FFFFFF;
+$blue-grey: #9699BE;
+$light-royal-blue: #3852FF;
+$night-blue: #02063F;
+$silver: #E9EAEB;
+
+$brand-colors: ('marine-blue', $marine-blue),
+('faded-red', $faded-red),
+('aqua-green', $aqua-green),
+('slate-blue', $slate-blue),
+('white', $white),
+('blue-grey', $blue-grey),
+('light-royal-blue', $light-royal-blue),
+('white', $white),
+('night-blue', $night-blue),
+('silver', $silver);
+
+
+@each $color in $brand-colors {
+  .text-color-#{nth($color,1)} {
+    color: nth($color, 2) !important;
+  };
+
+  .bg-color-#{nth($color,1)} {
+    background-color: nth($color, 2) !important;
+  };
+
+  .box-shadow-color-#{nth($color,1)} {
+    -webkit-box-shadow: inset 0 0 0 1px nth($color, 2) !important;
+            box-shadow: inset 0 0 0 1px nth($color, 2) !important;
+  };
+}
