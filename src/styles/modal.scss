@@ -1,9 +1,25 @@
 @import './_variable.scss';
 
+
+
 .modal-header{
     border-bottom:none;
     background-color: $white;
+    padding:0;
 }
 .modal-content{
+    max-width: 375px;
+    margin:auto;
     padding:20px;
+    p{
+        margin: 0 0 8px 0;
+    }
+}
+.modal-body{
+    padding: 0;
+}
+.form-input{
+    padding: 16px 24px;
+    border: solid 1px $blue-grey;
+    background-color: $white;
 }
