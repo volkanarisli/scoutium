@@ -1,0 +1,9 @@
+@import './_variable.scss';
+
+.modal-header{
+    border-bottom:none;
+    background-color: $white;
+}
+.modal-content{
+    padding:20px;
+}

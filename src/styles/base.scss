@@ -4,6 +4,8 @@
 }
 
 @import './_variable.scss';
+@import './modal.scss';
+@import './loader.scss';
 
 
 
@@ -11,4 +13,26 @@ body{
     font-family: 'MostarDesign';
     margin:0;
     background-color: $silver;
+}
+
+.button-default{
+    padding: 11.7px 91px 12.3px 90px;
+    border-radius: 8px;
+    color: $white;
+    background-color:$light-royal-blue;
+    border:none;
+    font-size: 12px;
+    &.sm{
+        padding: 11.7px 52.2px 12.3px 51.8px;
+    }
+    &.disabled {
+        background-color:$blue-grey;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+
+a{
+    cursor: pointer;
 }
