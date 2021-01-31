@@ -101,6 +101,7 @@
                 />
               </template>
               <a
+                role="button"
                 class="text-color-aqua-green"
                 v-if="
                   substitutes.players.length < 3 && !isPlayerSelectionComplete

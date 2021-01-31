@@ -5,14 +5,16 @@
       title="Add Substition"
       @show="fetchInOption"
       hide-footer
+      centered
     >
       <b-form @submit.prevent="onSubmit(request)">
         <div>
-          <p class="text-color-slate-blue">OUT PLAYER</p>
+          <p class="text-color-slate-blue label">OUT PLAYER</p>
           <b-form-select class="form-input mb-2" v-model="request.outPlayer">
+            <option :value="null">Enter player name</option>
             <option
               v-for="(player, index) in outPlayerOptions"
-              :key="index + 1"
+              :key="index"
               :value="player"
             >
               {{ player.display_name }}
@@ -21,8 +23,9 @@
         </div>
 
         <div>
-          <p class="text-color-slate-blue">IN PLAYER</p>
+          <p class="text-color-slate-blue label">IN PLAYER</p>
           <b-form-select class="form-input mb-2" v-model="request.inPlayer">
+            <option :value="null">Enter player name</option>
             <option
               v-for="(player, index) in inPlayerOptions"
               :key="index"
@@ -34,7 +37,7 @@
         </div>
 
         <div>
-          <p class="text-color-slate-blue">SUBSTITUTION MINUTE</p>
+          <p class="text-color-slate-blue label">SUBSTITUTION MINUTE</p>
           <b-form-input
             class="form-input mb-2"
             type="number"
@@ -122,5 +125,8 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+.label {
+  font-size: 12px;
+}
 </style>

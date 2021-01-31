@@ -7,6 +7,11 @@
     background-color: $white;
     padding:0;
 }
+.modal-title{
+font-size:16px;
+color: $night-blue;
+margin-bottom:16px;
+}
 .modal-content{
     max-width: 375px;
     margin:auto;
@@ -19,7 +24,22 @@
     padding: 0;
 }
 .form-input{
-    padding: 16px 24px;
+    padding: 7px 24px;
     border: solid 1px $blue-grey;
     background-color: $white;
+}
+
+.custom-select{
+    color:$blue-grey;
+    &:checked{
+        color: $night-blue;
+    }
+}
+
+.form-control{
+   
+    &::placeholder{
+        color:$blue-grey;
+    }
+
 }
