@@ -54,11 +54,7 @@ export default {
   },
   computed: mapGetters(["lineup"]),
   methods: {
-    ...mapActions([
-      "addLineupPlayer",
-      "removeLineupPlayer",
-      "resetSubstitudePlayer",
-    ]),
+    ...mapActions(["addLineupPlayer", "removeLineupPlayer"]),
   },
   data() {
     return {

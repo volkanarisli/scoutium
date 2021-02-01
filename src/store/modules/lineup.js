@@ -72,11 +72,7 @@ const actions = {
         }
 
 
-    },
-    resetSubstitudePlayer({ commit }) {
-
-        commit('resetSubstitutionPlayer')
-    },
+    }
 
 }
 
